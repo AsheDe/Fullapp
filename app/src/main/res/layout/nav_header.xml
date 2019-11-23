@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:gravity="top"
+    android:orientation="horizontal"
+
+    >
+
+    <ImageView
+        android:id="@+id/imag_nav_prov"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/img_provincia_habana"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nataniel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imag_nav_prov"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/blanco"
+        android:id="@+id/nombre_nav"
+        />
+
+    <TextView
+        android:id="@+id/tvrank_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking 15 "
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imag_nav_prov"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/blanco"/>
+
+    <RatingBar
+        android:id="@+id/rbptos_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imag_nav_prov"
+        android:layout_marginTop="70dp"
+        style="?attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="3.4"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Registrarse"
+        android:background="@color/colorFondoDrawer"
+        android:layout_gravity="bottom"
+        android:elevation="2dp"
+        android:textColor="@color/blanco"
+        android:drawableLeft="@drawable/img_registrarse"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="25dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/btnregistrodrawer"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/img_computer"
+        android:id="@+id/gopc"
+        />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_celular"
+            android:id="@+id/gocel"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_transporte"
+            android:id="@+id/gotrans"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_casa"
+            android:id="@+id/gocasa"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/img_shop_car"
+            android:id="@+id/gomisc"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/azul"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

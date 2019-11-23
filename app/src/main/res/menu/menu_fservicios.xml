@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <menu android:name="arCatMISCELANEAS" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all">
+
+        <item android:title="COMIDA" android:icon="@drawable/img_restaurantes"/>
+        <item android:title="ARTE" android:icon="@drawable/img_arte"/>
+        <item android:title="LIBROS Y REVISTAS" android:icon="@drawable/img_libros"/>
+        <item android:title="BISUTERÍA" android:icon="@drawable/img_bisuteria"/>
+        <item android:title="EMPLEO" android:icon="@drawable/img_empleo"/>
+        <item android:title="SERVICIOS" android:icon="@drawable/img_servicios"/>
+        <item android:title="MASCOTAS" android:icon="@drawable/img_mascotas"/>
+        <item android:title="OTROS" android:icon="@drawable/img_otros"/>
+</group>
+
+    </menu>
+
+

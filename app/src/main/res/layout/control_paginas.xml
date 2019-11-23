@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    tools:context="cu.fullapp.Anuncios"
+    android:layout_alignParentBottom="false"
+    android:background="@android:color/transparent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/img_fondo_coord_anunc"
+        android:id="@+id/coord_anuncios"
+
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:id="@+id/app_barlayout"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textSize="23dp"
+                        android:textColor="@color/blanco"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_pub_por_destacadas"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/ivPorRanking"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+            <cu.fullapp.SlidingTabLayout
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                app:layout_anchor="@+id/app_barlayout"
+                app:layout_anchorGravity="bottom|start"
+                android:layout_marginBottom="3dp"
+
+                />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:lines="1"
+    android:id="@+id/mostrar_categoria_pager"
+    android:layout_gravity="center_vertical|left"
+    android:layout_marginLeft="35dp"
+    android:textColor="@color/blanco"
+    android:textSize="19sp"
+    />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:id="@+id/borrartodoencat"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_borrar_todo"
+
+            />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:id="@+id/cantpublicacionesnuevas"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp"
+            android:text="5"
+            android:gravity="center"
+            />
+
+
+
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+        <android.support.design.widget.CoordinatorLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blanco"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linersearch"
+
+                />
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/img_ampliar"
+                android:id="@+id/ampliarformsearch"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resultadosbuscar"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:text=""
+                />
+
+
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:context=".Anuncios"
+            android:layout_marginTop="25dp"
+            android:background="@color/blanco"
+                     />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>
+
+
+
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/main"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/img_backg_nav_drawer"
+            app:itemTextColor="@color/blanco"
+            app:itemTextAppearance="?attr/textAppearanceListItemSmall"
+            app:headerLayout="@layout/nav_header"
+            android:id="@+id/nav_view"
+
+            />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+

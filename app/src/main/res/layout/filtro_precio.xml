@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rango de Precios"
+        android:textColor="@color/textoclaro"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        />
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mínimo: 5"
+        android:textColor="@color/textoclaro"
+        android:id="@+id/preciominimo"
+        android:layout_marginLeft="32dp"
+        android:layout_gravity="left"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Máximo: 10"
+            android:textColor="@color/textoclaro"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:id="@+id/preciomaximo"
+            />
+    </FrameLayout>
+
+    <cu.fullapp.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rangebarprecios"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        custom:tickStart="5"
+        custom:tickInterval="1"
+        custom:tickEnd="10"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        custom:tickColor="@color/colorMalva"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruccionprecio"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

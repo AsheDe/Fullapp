@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/blanco"
+
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colapsUser"
+            android:titleTextColor="@color/blanco"
+            android:theme="@style/MyTheme"
+            android:paddingTop="-10dp"
+            >
+
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/img_send_all"
+            android:layout_marginRight="25dp"
+            android:id="@+id/enviartodo"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+
+                android:layout_marginRight="8dp"
+                android:id="@+id/numbernsend"
+                android:textColor="@color/blanco"
+                android:textSize="17sp"
+                />
+
+
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditText"
+            android:id="@+id/contenedor_agregar_pub"
+            android:orientation="vertical"
+            android:background="@color/blanco"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/publicaciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideInset"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/nadaquemostrar"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_triste"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parece que no tienes nada enviado, ni para enviar. Comenta alguna publicación o Crea una publicación nueva y usa esta ventana para que envies esa información."
+                    android:layout_margin="32dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/main"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/img_backg_nav_drawer"
+        app:itemTextColor="@color/blanco"
+        app:itemTextAppearance="?attr/textAppearanceListItemSmall"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nav_view"
+
+       />
+
+
+    </android.support.v4.widget.DrawerLayout>

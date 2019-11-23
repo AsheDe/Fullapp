@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="portada_colapsing">500dp</dimen>
+    <dimen name="altocuba">60dp</dimen>
+    <dimen name="anchocuba">60dp</dimen>
+    <dimen name="portada_item_recyclers">104dp</dimen>
+    <dimen name="altocard">360dp</dimen>
+    <dimen name="progbarport">256dp</dimen>
+    <dimen name="imgavatar">200dp</dimen>
+    <dimen name="margencard">420dp</dimen>
+
+    <dimen name="portada_img_prov">204dp</dimen>
+    <dimen name="portad_progbar">160dp</dimen>
+    <dimen name="portada_rel_val">48dp</dimen>
+    <dimen name="portada_img_categ">52dp</dimen>
+
+    <dimen name="portada_margenesinferiores">10dp</dimen>
+ <dimen name="valorport">64dp</dimen>
+    <dimen name="margenescard">64dp</dimen>
+    <dimen name="margentopcuba">32dp</dimen>
+    <dimen name="traslacioncuba">160dp</dimen>
+    <dimen name="espaciado_card">16dp</dimen>
+    <dimen name="infotopmargin">116dp</dimen>
+    <dimen name="textorecycler">20sp</dimen>
+    <dimen name="textopresentacion">28sp</dimen>
+    <dimen name="movimientostar">12dp</dimen>
+    <dimen name="margeninferior">12dp</dimen>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <bool name="reallysmall">false</bool>
+    <dimen name="margensup">180dp</dimen>
+    <dimen name="margeninf">120dp</dimen>
+    <dimen name="appbaranuncios">176dp</dimen>
+    <dimen name="pageranunciostop">172dp</dimen>
+</resources>

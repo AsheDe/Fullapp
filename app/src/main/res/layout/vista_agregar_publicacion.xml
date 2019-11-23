@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    >
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+
+
+          >
+
+
+              <android.support.v7.widget.Toolbar
+                  android:id="@+id/toolbar"
+                  android:layout_width="match_parent"
+                  android:layout_height="?attr/actionBarSize"
+                  android:background="@color/colapsUser"
+                  android:titleTextColor="@color/blanco"
+                  >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/img_cerrar"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/cerrar"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/img_guardar"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/guardar"
+
+                    />
+
+
+                </android.support.v7.widget.Toolbar>
+
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+          <android.support.design.widget.CoordinatorLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:theme="@style/EditText"
+              android:id="@+id/contenedor_agregar_pub"
+              android:orientation="vertical"
+              android:background="@color/blanco"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              >
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Título"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/colorAccent"
+
+                >
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvtitulop"
+                android:textColor="@color/colorFont"
+                android:scrollbars="vertical"
+                android:isScrollContainer="true"
+                android:maxLength="80"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+          <cu.fullapp.EditTextPers
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/etpersPrecio"
+              android:textColor="@color/colorFont"
+              android:layout_marginTop="55dp"
+              />
+
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textMultiLine"
+
+              android:hint="@string/msg_cont_pub"
+
+              android:textColorHint="@color/colorAccent"
+              android:layout_marginTop="100dp"
+
+
+              >
+
+              <android.support.design.widget.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="150dp"
+                  android:id="@+id/contenido"
+                  android:textColor="@color/colorFont"
+                  android:scrollbars="vertical"
+                  android:isScrollContainer="true"
+                  />
+
+
+          </android.support.design.widget.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Categoría"
+                android:id="@+id/textView3"
+                android:layout_marginTop="270dp"
+                android:textColor="@color/colorFont"
+
+                />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spCategoria"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="290dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Subcategoría"
+                android:id="@+id/textView4"
+                android:layout_marginTop="330dp"
+
+                android:textColor="@color/colorFont"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spSubcategoria"
+
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="350dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Provincia"
+                android:id="@+id/textView5"
+                android:layout_marginTop="390dp"
+                android:textColor="@color/colorFont"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spProvincia"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="410dp"/>
+
+              <CheckBox
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=" Estoy Buscando - (Marque esta casilla si desea indicar que NO está vendiendo, sino que está buscando este producto)"
+                  android:id="@+id/publicarcomoBusco"
+                  android:layout_marginTop="450dp"
+                  />
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="3dp"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="540dp"
+
+                  >
+                  <ImageView
+                      android:layout_width="35dp"
+                      android:layout_height="35dp"
+                      android:id="@+id/colorcat"
+                      android:src="@color/azul"
+                      android:layout_marginLeft="50dp"
+                      android:scaleType="fitXY"
+                      />
+                  <ImageView
+                      android:layout_width="35dp"
+                      android:layout_height="35dp"
+                      android:id="@+id/colorsubcat"
+                      android:src="@color/azul"
+                      android:layout_marginLeft="50dp"
+                      android:scaleType="fitXY"
+                      />
+                  <ImageView
+                      android:layout_width="35dp"
+                      android:layout_height="35dp"
+                      android:id="@+id/imgprov"
+                      android:layout_marginLeft="50dp"
+                      android:src="@color/azul"
+                      android:scaleType="fitXY"
+                      />
+              </LinearLayout>
+
+          </android.support.design.widget.CoordinatorLayout>
+
+          </ScrollView>
+
+
+   </LinearLayout>
+
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/main"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/img_backg_nav_drawer"
+            app:itemTextColor="@color/blanco"
+            app:itemTextAppearance="?attr/textAppearanceListItemSmall"
+            app:headerLayout="@layout/nav_header"
+            android:id="@+id/nav_view"
+
+            >
+
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+

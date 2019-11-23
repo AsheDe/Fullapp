@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/muPortada"
+            app:showAsAction="always"
+            android:title="Portada"
+            android:icon="@drawable/img_casa"
+            />
+        <item
+            android:id="@+id/muNueva_Pub"
+            app:showAsAction="always"
+            android:title="Nueva Publicación"
+            android:icon="@drawable/img_crear_nueva_publicacion"
+            />
+        <item
+            android:id="@+id/muMisEnvios"
+            android:title="Mis Envios"
+            app:showAsAction="always"
+            android:icon="@drawable/img_misenvios"
+            />
+
+        <item
+            android:id="@+id/muUsuarios"
+            android:title="Usuarios"
+            app:showAsAction="always"
+            android:icon="@drawable/img_multiples_usuarios"
+            />
+    <item
+        android:id="@+id/muMis_Prefs"
+        app:showAsAction="always"
+        android:title="Configuracion"
+        android:icon="@drawable/img_settings"
+
+        />
+
+
+
+    <item 
+        android:id="@+id/muAyuda"
+        android:title="Ayuda"
+        app:showAsAction="always"
+        android:icon="@drawable/img_help_circle"
+         />
+
+   </group>
+
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <menu android:name="mufCatCEL" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all">
+        <item android:title="ANDROID" android:icon="@drawable/img_android"/>
+        <item android:title="IPHONE" android:icon="@drawable/img_iphone"/>
+        <item android:title="W2 PHONE" android:icon="@drawable/img_w2phone"/>
+        <item android:title="TABLETS" android:icon="@drawable/img_tablet"/>
+        <item android:title="KINDLE" android:icon="@drawable/img_kindle"/>
+        <item android:title="TELEFONO" android:icon="@drawable/img_cellbasic"/>
+        <item android:title="LÍNEAS" android:icon="@drawable/img_lineas"/>
+        <item android:title="ACCESORIOS" android:icon="@drawable/img_accesoriostel"/>
+        <item android:title="OTROS" android:icon="@drawable/img_otros"/>
+    </group>
+
+    </menu>
+

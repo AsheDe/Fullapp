@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="arProvincias">
+<item>Pinar del Río</item>
+<item>Habana</item>
+<item>Artemisa</item>
+<item>Mayabeque</item>
+<item>Matanzas</item>
+<item>Cienfuegos</item>
+    <item>Villa Clara</item>
+<item>Sancti Spiritus</item>
+<item>Ciego de Ávila</item>
+<item>Camaguey</item>
+<item>Las Tunas</item>
+<item>Granma</item>
+    <item>Holguín</item>
+<item>Santiago de Cuba</item>
+<item>Guantánamo</item>
+<item>Isla de La Juventud</item>
+</string-array>
+    <string-array name="arValProv">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6 </item>
+        <item>7 </item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="defaultarsubs" >
+
+    </string-array>
+    <string-array name="arCategorias" >
+        <item>COMPUTADORA</item>
+        <item>CELULAR</item>
+        <item>TRANSPORTE</item>
+        <item>HOGAR</item>
+        <item>MISCELANEAS</item>
+    </string-array>
+    <string-array name="arGrupoCategoria" >
+        <item>facil-app-computadora@googlegroups.com</item>
+        <item>facil-app-celular@googlegroups.com</item>
+        <item>facil-app-transporte@googlegroups.com</item>
+        <item>facil-app-hogar@googlegroups.com</item>
+        <item>facil-app-miscelaneas@googlegroups.com</item>
+    </string-array>
+
+<string-array name="arCatPC" >
+    <item>PC (TODO INCLUIDO)</item>
+    <item>LAPTOP</item>
+    <item>CONSOLAS</item>
+    <item>TORRE</item>
+    <item>MONITOR</item>
+    <item>KITs Y PIEZAS</item>
+    <item>ALMACENAMIENTO</item>
+    <item>TARJETA DE VIDEO</item>
+    <item>BACKUPS</item>
+    <item>SOFTWARE</item>
+    <item>ACCESORIOS</item>
+    <item>OTROS</item>
+</string-array>
+
+
+    <string-array name="arCatCEL" >
+        <item>ANDROID</item>
+        <item>IPHONE</item>
+        <item>W2 PHONE</item>
+        <item>TABLETS</item>
+        <item>KINDLE</item>
+        <item>TELEFONO</item>
+        <item>LINEAS</item>
+        <item>ACCESORIOS TEL</item>
+        <item>OTROS</item>
+    </string-array>
+
+
+    <string-array name="arCatTRANS" >
+        <item>CARRO</item>
+        <item>MOTO</item>
+        <item>BICICLETA</item>
+        <item>PIEZAS Y ACCESORIOS </item>
+        <item>ALQUILER</item>
+        <item>REPARACIONES</item>
+        <item>OTROS</item>
+    </string-array>
+
+    <string-array name="arCatINMOB" >
+        <item >VENTA DE CASAS</item>
+        <item >VENTA DE APARTAMENTOS</item>
+        <item >HOSPEDAJE Y ALQUILER</item>
+        <item >PERMUTA</item>
+        <item >AIRE ACONDICIONADO</item>
+        <item >ELECTRODOMÉSTICOS</item>
+        <item >ARTÍCULOS DEL HOGAR</item>
+        <item>OTROS</item>
+    </string-array>
+
+
+
+    <string-array name="arCatMISCELANEAS" >
+        <item>COMIDA</item>
+        <item>ARTE, LIBROS Y REVISTAS</item>
+        <item>OPERACIONES MONETARIAS</item>
+        <item>ROPA Y BISUTERÍA</item>
+        <item>EMPLEO</item>
+        <item>SERVICIOS</item>
+        <item>MASCOTAS</item>
+        <item>OTRAS</item>
+    </string-array>
+
+    <string-array name="arMoneda" >
+        <item>CUC</item>
+        <item>MN</item>
+    </string-array>
+    <string-array name="arValMoneda" >
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="NombresSubcategorias" >
+    <item >PC (TODO INCLUIDO)</item> 
+    <item >LAPTOP</item> 
+    <item >CONSOLAS</item> 
+    <item >TORRE</item> 
+    <item >MONITOR</item> 
+    <item >KITs Y PIEZAS</item>
+    <item >ALMACENAMIENTO</item> 
+    <item >TARJETA DE VIDEO</item> 
+    <item >BACKUPS</item>
+    <item >SOFTWARE</item> 
+
+    <item >ACCESORIOS</item> 
+    
+    <item >ANDROID</item> 
+    <item >IPHONE</item> 
+    <item >W2 PHONE</item> 
+    <item >TABLETS</item> 
+    <item >KINDLE</item>
+    <item >TELEFONO</item> 
+    <item >LINEAS</item>
+    <item >ACCESORIOS TEL</item>
+    
+    <item >CARRO</item>
+    <item >MOTO</item> 
+    <item >BICICLETA</item> 
+    <item >PIEZAS Y ACCESORIOS</item> 
+    <item >ALQUILER</item> 
+    <item >REPARACIONES</item> 
+    
+    <item >VENTA DE CASAS</item> 
+    <item >VENTA DE APARTAMENTOS</item>
+    <item >HOSPEDAJE Y ALQUILER</item> 
+    <item >PERMUTA</item> 
+    <item >AIRE ACONDICIONADO</item> 
+    <item >ELECTRODOMÉSTICOS</item> 
+    <item >ARTÍCULOS DEL HOGAR</item> 
+    
+    <item >COMIDA</item>
+        <item>ARTE, LIBROS Y REVISTAS</item>
+        <item>OPERACIONES MONETARIAS</item>
+        <item>ROPA Y BISUTERÍA</item>
+    <item >EMPLEO</item> 
+    <item >SERVICIOS</item> 
+    <item >MASCOTAS</item> 
+    <item >OTROS</item> 
+    </string-array>
+
+    <array name="protocolos">
+        <item>imap</item>
+        <item>pop3</item>
+    </array>
+
+    <array name="preguntas">
+        <item >@string/Pquenecesito</item>
+        <item >@string/Pimport</item>
+        <item >@string/Pcomoreg</item>
+        <item >@string/Pcambiarcat</item>
+        <item >@string/Pactivarapp</item>
+        <item >@string/Pderchos</item>
+        <item >@string/Pautor</item>
+
+    </array>
+    <array name="respuestas">
+        <item >@string/Rquenecesito</item>
+        <item >@string/Rimport</item>
+        <item >@string/Rcomoreg</item>
+        <item >@string/Rcambiarcat</item>
+        <item >@string/Ractivarapp</item>
+        <item >@string/Rderchos</item>
+        <item >@string/Rautor</item>
+
+    </array>
+
+    <array name="opcssl">
+        <item>None</item>
+        <item>STARTTLS</item>
+        <item>SSL/TLS</item>
+    </array>
+
+</resources>

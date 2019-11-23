@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="50dp">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:hint="Precio"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tillaya"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorFont"
+         >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiprecio"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorFont"
+            android:textSize="17dp"
+            android:maxLength="7"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:layout_toRightOf="@+id/tillaya"
+        android:layout_alignParentBottom="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:hint="00"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/etcent"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorFont"
+        android:layout_toRightOf="@+id/tillaya"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticent"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorFont"
+            android:textSize="17dp"
+            android:maxLength="2"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/spMoneda"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@+id/etcent"
+        android:layout_alignParentBottom="true"
+         />
+
+</RelativeLayout>

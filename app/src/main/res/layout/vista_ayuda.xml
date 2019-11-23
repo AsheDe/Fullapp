@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colapsUser"
+        android:titleTextColor="@color/blanco"
+        android:theme="@style/MyTheme"
+        >
+
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_gravity="left|center_vertical"
+            android:text="AYUDA"
+            android:layout_marginLeft="1dp"
+            android:textSize="18sp"
+            android:textColor="@color/blanco"
+            android:id="@+id/tituloactividad"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <cu.fullapp.Vista_Item_Ayuda
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quenecesito"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+
+
+        <cu.fullapp.Vista_Item_Ayuda
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/importante"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            />
+
+<cu.fullapp.Vista_Item_Ayuda
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/comoregistrarse"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="6dp"
+    />
+
+    <cu.fullapp.Vista_Item_Ayuda
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comocambiarcategorias"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+
+        <cu.fullapp.Vista_Item_Ayuda
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rnoact"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            />
+        <cu.fullapp.Vista_Item_Ayuda
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Rderchos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            />
+    <cu.fullapp.Vista_Item_Ayuda
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/autorapp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        />
+
+
+    </LinearLayout>
+</ScrollView>
+   
+</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/main"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/img_backg_nav_drawer"
+        app:itemTextColor="@color/blanco"
+        app:itemTextAppearance="?attr/textAppearanceListItemSmall"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nav_view"
+
+        />
+
+
+</android.support.v4.widget.DrawerLayout>

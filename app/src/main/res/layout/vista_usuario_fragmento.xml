@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView android:layout_height="wrap_content" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+
+    >
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardBackgroundColor="@color/blanco"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="16dp"
+
+            android:focusableInTouchMode="true"
+            app:cardCornerRadius="8dp"
+            android:id="@+id/card_usuario"
+
+            >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+              >
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_marginRight="15dp"
+                  android:layout_marginLeft="15dp"
+                  android:layout_height="wrap_content"
+                  android:textSize="24sp"
+                  android:textColor="@color/colorFont"
+                  android:lines="1"
+                  android:gravity="center"
+                  android:id="@+id/usertvnombre"
+                  android:transitionName="@string/transicionautor"
+                  android:text="Yudel"
+                  android:textStyle="bold"
+                  android:layout_marginTop="60dp"
+                  />
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+
+                  android:layout_gravity="bottom"
+                  android:background="@color/lineaDiv"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="4dp"
+                  />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/comones_telefono"
+                    android:src="@drawable/img_llamar"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:id="@+id/comones_sms"
+                    android:src="@drawable/img_sms"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/comones_correo"
+                    android:src="@drawable/img_correo"
+
+                    />
+
+
+            </LinearLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+
+                  android:layout_gravity="bottom"
+                  android:background="@color/lineaDiv"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  />
+
+
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="2"
+                android:id="@+id/userrating"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyle"
+                android:transitionName="@string/transicion_ratings"
+
+
+                android:progressBackgroundTint="@color/colorAccent1"
+                android:progressTint="@color/colorAccent"
+                android:secondaryProgressTint="@color/colorAccent1"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="valoracion"
+                android:textColor="@color/colorFondoDrawer"
+                android:textSize="16sp"
+
+                android:layout_gravity="center"
+                android:id="@+id/valoracionsignal"
+                />
+
+              <LinearLayout
+                  android:layout_marginTop="4dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="5"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="22sp"
+                      android:id="@+id/uservotos"
+                      android:gravity="center"
+                      />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="5"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="22sp"
+                      android:id="@+id/userpublicaciones"
+
+                      android:gravity="center"
+                      />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="5"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="22sp"
+                      android:id="@+id/userranking"
+                      android:gravity="center"
+                      />
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+
+                  >
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="votos"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="14sp"
+
+                      android:gravity="center"
+                      />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="publicaciones"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="14sp"
+
+                      android:gravity="center"
+
+                      />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:text="ranking"
+                      android:textColor="@color/colorSwipe"
+                      android:textSize="14sp"
+
+                      android:gravity="center"
+                      />
+              </LinearLayout>
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="0.1dp"
+
+                  android:layout_gravity="bottom"
+                  android:background="@color/lineaDiv"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad de la Licencia"
+                android:textColor="@color/colorFondoDrawer"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendedor Elaborador de Bebidas Alcoholicas Vendedor Elaborador de Bebidas Alcoholicas"
+                android:textColor="@color/colorFont"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:lines="2"
+                android:id="@+id/useractlic"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número de Licencia"
+                android:textColor="@color/colorFondoDrawer"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorFont"
+                android:textSize="16sp"
+
+                android:lines="1"
+                android:id="@+id/usernumlic"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="4dp"
+                />
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:textColor="@color/colorAccent"
+                  android:textSize="14sp"
+                  android:id="@+id/numcomentspublicacion"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  />
+
+              <android.support.v7.widget.RecyclerView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/comentarios"
+                  android:layout_marginBottom="16dp"
+                  android:background="@color/blanco"
+
+                  />
+
+          </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/user_img_provincia"
+
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:layout_anchor="@id/card_usuario"
+        app:layout_anchorGravity="top|center_horizontal"
+        android:src="@color/colorAccent"
+        android:transitionName="@string/transicionprov"
+        android:elevation="8dp"
+        android:nestedScrollingEnabled="false"
+
+        />
+    <ProgressBar
+        android:id="@+id/userprogressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:background="@drawable/img_circle"
+        android:max="500"
+        android:progress="0"
+        android:progressDrawable="@drawable/img_circular_progress_bar"
+        app:layout_anchor="@id/card_usuario"
+        app:layout_anchorGravity="top|center_horizontal"
+        android:elevation="8dp"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.NestedScrollView>

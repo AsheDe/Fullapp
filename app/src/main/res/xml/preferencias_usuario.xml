@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+	>
+
+   <PreferenceCategory android:title="Configuración de Usuario">
+
+	   <EditTextPreference
+			android:key="nombre"
+			android:title="Nombre"
+			android:summary="Escriba su nombre"
+			android:dialogTitle="Nombre de Usuario"
+			android:persistent="true"
+		   android:icon="@drawable/img_usuario"
+		   />
+	   <Preference
+		   android:key="correo"
+		   android:title="Correo"
+		   android:summary="Correo registrado"
+		   android:persistent="true"
+		   android:icon="@drawable/img_correo"
+
+		   />
+
+
+
+		<EditTextPreference
+			android:key="telef"
+			android:title="Telefono"
+			android:summary="Escriba el teléfono"
+			android:dialogTitle="Introduce el teléfono"
+			android:persistent="true"
+			android:icon="@drawable/img_telefono"
+
+			 />
+		<ListPreference
+		    android:key="prov"
+			android:title="Provincia"
+			android:summary="Seleccione su Provincia"
+			android:dialogTitle="Seleccione Provincia"
+		    android:entries="@array/arProvincias"
+		    android:entryValues="@array/arValProv"
+			android:persistent="true"
+			android:icon="@drawable/img_mapmark"
+		    />
+
+		<EditTextPreference
+			android:key="actlic"
+			android:title="Actividad por cuenta propia (Opcional)"
+			android:summary="Actividad de la licencia"
+			android:dialogTitle="Introduzca Actividad de la licencia"
+			android:icon="@drawable/img_actlic"
+			android:persistent="true"
+			 />
+		<EditTextPreference
+			android:key="nolic"
+			android:title="Número de Licencia (Opcional)"
+			android:summary="Escriba el número de  licencia"
+			android:dialogTitle="Introduzca la licencia"
+			android:icon="@drawable/img_nolic"
+			android:persistent="true"
+			 />
+
+
+	<CheckBoxPreference
+		android:key="todacuba"
+		android:title="Origen Actualización"
+		android:icon="@drawable/img_patrocinio"
+		android:persistent="true"
+		android:defaultValue="true"
+		android:summary="Marque para recibir publicaciones de toda Cuba. Desmarque para solo recibir de su provincia."
+		/>
+
+</PreferenceCategory>
+       
+
+</PreferenceScreen>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/blanco"
+    >
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/ratingBarStyleSmall"
+        android:theme="@style/Rating"
+        android:numStars="5"
+        android:rating="3"
+        android:isIndicator="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/pubrating_comment"
+        />
+    <ImageView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/img_usuario"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitXY"
+
+        android:id="@+id/imvuser"
+        android:layout_below="@+id/pubrating_comment"
+        />
+    <TextView
+        android:id="@+id/tvautorcoment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" YUDEL"
+        android:theme="@style/Comentarios"
+
+        android:layout_marginTop="3dp"
+
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorSwipe"
+        android:layout_below="@+id/pubrating_comment"
+        android:layout_toRightOf="@+id/imvuser"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+
+        android:id="@+id/tvpub_comment_comentario"
+        android:text="Este es el comentario que se realizo en el Titulo de la entrada por el usuario recogido en la parte del autor"
+        android:theme="@style/Comentarios"
+        android:layout_toRightOf="@+id/imvuser"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorFont"
+        android:layout_below="@+id/tvautorcoment"
+        />
+
+
+
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/img_reloj"
+        android:layout_below="@+id/tvpub_comment_comentario"
+       android:layout_toLeftOf="@+id/tvfechacoment"
+        />
+    <TextView
+        android:id="@+id/tvfechacoment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 10 de julio 1985"
+        android:theme="@style/Comentarios"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorSwipe"
+        android:layout_below="@+id/tvpub_comment_comentario"
+        android:layout_marginBottom="4dp"/>
+
+
+</RelativeLayout>

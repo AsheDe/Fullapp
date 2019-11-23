@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <menu android:name="mufCatPC" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all">
+        <item android:title="PC (TODO INCLUIDO)" android:icon="@drawable/img_computer"/>
+        <item android:title="LAPTOP" android:icon="@drawable/img_laptop"/>
+        <item android:title="CONSOLAS" android:icon="@drawable/img_consolas"/>
+        <item android:title="TORRE" android:icon="@drawable/img_torre" />
+        <item android:title="MONITOR" android:icon="@drawable/img_monitor" />
+        <item android:title="KIT's Y PIEZAS" android:icon="@drawable/img_partespc"/>
+         <item android:title="ALMACENAMIENTO" android:icon="@drawable/img_hdd"/>
+        <item android:title="TARJETA DE VIDEO" android:icon="@drawable/img_tarjvideo"/>
+        <item android:title="BACKUPS" android:icon="@drawable/img_bateria"/>
+        <item android:title="SOFTWARE" android:icon="@drawable/img_software"/>
+
+        <item android:title="ACCESORIOS" android:icon="@drawable/img_mouse" />
+        <item android:title="OTROS" android:icon="@drawable/img_otros"/>
+</group>
+    </menu>
+
+

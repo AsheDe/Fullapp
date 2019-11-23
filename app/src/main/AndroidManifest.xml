@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cu.fullapp">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+       <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_facil"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme"
+           >
+
+           <activity
+               android:name=".Portada_Fragment"
+               android:label="@string/app_name"
+               android:theme="@style/MyTheme"
+               android:screenOrientation="portrait"
+               android:parentActivityName=".Portada_Fragment">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".Portada_Fragment" />
+               <intent-filter>
+                   <action android:name="android.intent.action.MAIN" />
+                   <category android:name="android.intent.category.LAUNCHER" />
+
+               </intent-filter>
+           </activity>
+
+        <activity
+            android:name="cu.fullapp.Anuncios"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.ANUNCIOS" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+
+       </intent-filter>
+        </activity>
+        <activity
+            android:name="cu.fullapp.Preferencias_Usuario"
+            android:label="@string/app_name"
+            android:theme="@style/Preferencias"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.PREF" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cu.fullapp.Actividad_Publicacion_Completa"
+            android:label="@string/app_name"
+            android:theme="@style/Actividades_statusbar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.PUBLICACION" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cu.fullapp.Vista_Todos_Usuarios"
+            android:label="@string/app_name"
+            android:theme="@style/Actividades_statusbar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.USUARIOS" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cu.fullapp.Vista_Usuario"
+            android:label="@string/app_name"
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.USUARIO_UNICO" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cu.fullapp.Vista_Agregar_Publicacion"
+            android:label="@string/app_name"
+            android:theme="@style/Actividades_statusbar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Portada_Fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Portada_Fragment" />
+            <intent-filter>
+                <action android:name="cu.fullapp.NUEVA_PUBLICACION" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+           <activity
+               android:name="cu.fullapp.Vista_Send_Email"
+               android:label="@string/app_name"
+               android:theme="@style/Actividades_statusbar"
+               android:screenOrientation="portrait"
+               android:parentActivityName=".Portada_Fragment">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".Portada_Fragment" />
+               <intent-filter>
+                   <action android:name="cu.fullapp.SENDEMAIL" />
+                   <category android:name="android.intent.category.DEFAULT" />
+
+               </intent-filter>
+           </activity>
+
+           <activity
+               android:name="cu.fullapp.Vista_Ayuda"
+               android:label="@string/app_name"
+               android:theme="@style/Actividades_statusbar"
+               android:screenOrientation="portrait"
+               android:parentActivityName=".Portada_Fragment">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".Portada_Fragment" />
+               <intent-filter>
+                   <action android:name="cu.fullapp.AYUDA" />
+                   <category android:name="android.intent.category.DEFAULT" />
+
+               </intent-filter>
+           </activity>
+           <activity
+               android:name="cu.fullapp.Mis_Envios"
+               android:label="@string/app_name"
+               android:theme="@style/Actividades_statusbar"
+               android:screenOrientation="portrait"
+               android:parentActivityName=".Portada_Fragment">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value=".Portada_Fragment" />
+               <intent-filter>
+                   <action android:name="cu.fullapp.MISENVIOS" />
+                   <category android:name="android.intent.category.DEFAULT" />
+
+               </intent-filter>
+           </activity>
+    </application>
+
+</manifest>

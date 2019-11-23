@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_capitolio"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/colorOverCollaps"
+        android:padding="8dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_cerrar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:id="@+id/regcerrar"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_anterior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:id="@+id/reganterior"
+        />
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:src="@drawable/img_usuario"
+        android:layout_marginTop="35dp"
+       android:layout_centerHorizontal="true"
+        android:id="@+id/img_current"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="NOMBRE DE USUARIO"
+        android:layout_above="@+id/botonaceptar"
+        android:translationY="-85dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/campo1"
+        >
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcampo1"
+            android:textColor="@color/blanco"
+            android:scrollbars="vertical"
+            android:isScrollContainer="true"
+            android:maxLength="80"
+            android:inputType="textNoSuggestions"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="NOMBRE DE USUARIO"
+        android:layout_above="@+id/botonaceptar"
+        android:translationY="-35dp"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/campo2"
+
+        >
+
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcampo2"
+            android:textColor="@color/blanco"
+            android:scrollbars="vertical"
+            android:isScrollContainer="true"
+            android:maxLength="80"
+            android:inputType="textNoSuggestions"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginLeft="35dp"
+    android:background="@drawable/img_backg_button_red"
+    android:text="ACEPTAR"
+
+
+    android:textColor="@color/blanco"
+
+    android:layout_alignParentBottom="true"
+    android:translationY="-30dp"
+
+    android:id="@+id/botonaceptar"
+
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:translationY="-95dp"
+    android:visibility="gone"
+    android:id="@+id/opcprotocol"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_marginLeft="40dp"
+    >
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/protocolo"
+        >
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="IMAP"
+            android:id="@+id/rbImap"
+            android:textColor="@color/blanco"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POP3"
+            android:id="@+id/rbPop3"
+            android:textColor="@color/blanco"/>
+</RadioGroup>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SSL:"
+    android:textColor="@color/blanco"
+    />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSL"
+        android:textColor="@color/blanco"
+        android:layout_marginTop="15dp"
+        android:id="@+id/opcssl"
+        android:entries="@array/opcssl"
+
+        />
+</LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    android:translationY="-80dp"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:id="@+id/radioprovincias"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarSize="2dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    >
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgprovincias"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pinar del Río"
+            android:id="@+id/Pinar"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habana"
+            android:id="@+id/Habana"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artemisa"
+            android:id="@+id/Artemisa"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mayabeque"
+            android:id="@+id/Mayabeque"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matanzas"
+            android:id="@+id/Matanzas"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cienfuegos"
+            android:id="@+id/Cienfuegos"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Villa Clara"
+            android:id="@+id/Villa"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sancti Spiritus"
+            android:id="@+id/Sancti"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciego de Ávila"
+            android:id="@+id/Ciego"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camaguey"
+            android:id="@+id/Camaguey"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Las Tunas"
+            android:id="@+id/Tunas"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Granma"
+            android:id="@+id/Granma"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holguín"
+            android:id="@+id/Holguin"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santiago de Cuba"
+            android:id="@+id/Santiago"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guantánamo"
+            android:id="@+id/Guantanamo"
+            android:textColor="@color/blanco"/>
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isla de La Juventud"
+        android:id="@+id/Isla"
+        android:textColor="@color/blanco"/>
+
+
+    </RadioGroup>
+</ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HOLA!"
+        android:id="@+id/TVHOLA"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="40sp"
+        android:textColor="@color/blanco"
+        android:visibility="gone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bienvenido a nuestra plataforma de intercambio. Ahora te ayudaremos a registrarte!"
+        android:id="@+id/TVbienvenido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="16sp"
+        android:textColor="@color/blanco"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:translationY="-130dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El correo y contraseña que proveas, deben ser correctos y accesibles desde tu teléfono. Por ejemplo si usas nauta, debes tener los datos móviles activados. Si usas Gmail, debes estar conectado a internet. Para otro tipo de correo, debes configurar servidor y puerto."
+
+        android:id="@+id/TVadvertencia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:translationY="-125dp"
+        android:visibility="gone"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxCOMPUTADORA"
+        android:text="COMPUTADORA"
+        android:textColor="@color/blanco"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxCELULAR"
+        android:text="CELULAR"
+        android:textColor="@color/blanco"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxTRANSPORTE"
+        android:text="TRANSPORTE"
+        android:textColor="@color/blanco"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxHOGAR"
+        android:text="HOGAR"
+        android:textColor="@color/blanco"
+        />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:visibility="gone"
+        android:id="@+id/checkboxMISCELANEAS"
+        android:text="MISCELANEAS"
+        android:textColor="@color/blanco"
+        />
+
+
+
+</RelativeLayout>

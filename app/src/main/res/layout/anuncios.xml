@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+
+    >
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fitsSystemWindows="true"
+        android:id="@+id/coord_anuncios"
+
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appbaranuncios"
+            android:id="@+id/app_barlayout"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/bacground_transp_portada"
+            android:elevation="4dp"
+            android:transitionName="@string/transicion_portada_colaps"
+
+            >
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fitsSystemWindows="true"
+                android:titleTextAppearance="@android:style/TextAppearance.Small"
+
+                >
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/img_pub_por_destacadas"
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/ivPorRanking"
+                        android:layout_gravity="right"
+                        />
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_actualizar"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/ivActualizarCategoria"
+                    android:layout_gravity="right"
+                    />
+
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ultactualizacion"
+                    android:text="Hasta: 27/6/2017"
+                    android:textSize="16sp"
+                    android:textColor="@color/blanco"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:id="@+id/cantpublicacionesnuevas"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="16dp"
+                    />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/borrartodoencat"
+                android:src="@drawable/img_borrar_todo"
+                android:layout_marginRight="16dp"
+
+                />
+
+
+
+            </LinearLayout>
+
+
+            <cu.fullapp.SlidingTabLayout
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="32dp"
+
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+
+                />
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:context=".Anuncios"
+            android:layout_marginTop="@dimen/pageranunciostop"
+            android:background="@color/blanco"
+
+            android:transitionName="@string/transicion_lista"
+                     />
+
+
+        <cu.fullapp.ExpandableButtonView
+            android:id="@+id/expandirfiltros"
+            android:layout_gravity="bottom|right"
+            app:button_icon="@drawable/img_filtros"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/FloatingButtons"
+            >
+        </cu.fullapp.ExpandableButtonView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/main"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/img_backg_nav_drawer"
+            app:itemTextColor="@color/blanco"
+            app:itemTextAppearance="?attr/textAppearanceListItemSmall"
+            app:headerLayout="@layout/nav_header"
+            android:id="@+id/nav_view"
+
+            />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+
+
+

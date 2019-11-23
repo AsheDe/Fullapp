@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <menu android:name="mufCatTRANS" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item android:title="CARRO" android:icon="@drawable/img_transporte"/>
+        <item android:title="MOTO" android:icon="@drawable/img_motor" />
+        <item android:title="BICICLETA" android:icon="@drawable/img_bicicleta"/>
+        <item android:title="PIEZAS Y ACCESORIOS" android:icon="@drawable/img_pieza_carro"/>
+        <item android:title="ALQUILER" android:icon="@drawable/img_renta" />
+        <item android:title="REPARACIONES" android:icon="@drawable/img_reparaciones"/>
+        <item android:title="OTROS" android:icon="@drawable/img_otros"/>
+</group>
+    </menu>
+
+

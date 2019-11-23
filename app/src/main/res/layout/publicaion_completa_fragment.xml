@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/publicacion_completa"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardBackgroundColor="@color/blanco"
+            app:cardElevation="3dp"
+            android:padding="8dp"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            android:focusableInTouchMode="true"
+            app:cardCornerRadius="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/img_buscar_publicacion"
+                    android:id="@+id/pubbusco"
+                    android:visibility="invisible"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tvTituloPub"
+                    android:text="Titulo publicación"
+                    android:transitionName="@string/transiciontit"
+
+                    />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgpubs"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:id="@+id/cuadro_subcategoria"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:transitionName="@string/transicionimg"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backgpubs"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    />
+                <TextView
+                    android:id="@+id/tvPrecio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200 CUC"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:transitionName="@string/transicion_precio"
+                    />
+                <RatingBar
+                    android:id="@+id/rbCalificacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:stepSize="0.1"
+                    android:isIndicator="true"
+                    android:visibility="visible"
+                    style="?attr/ratingBarStyleSmall"
+                    android:theme="@style/Rating"
+                    android:layout_gravity="center"
+                    android:transitionName="@string/transicion_ratings"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/img_prov_publicacion"
+                        android:src="@drawable/img_ciego"
+                        android:scaleType="fitXY"
+                        android:transitionName="@string/transicionprov"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/autorpub"
+                        android:layout_toRightOf="@+id/img_prov_publicacion"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/textoclaro"
+                        android:transitionName="@string/transicionautor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_prov_publicacion"
+
+                        android:textColor="@color/textoclaro"
+                        android:layout_toRightOf="@+id/img_prov_publicacion"
+                        android:layout_marginLeft="16dp"
+                        android:layout_below="@+id/autorpub"
+                        android:layout_marginTop="8dp"
+
+                        />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvContenido"
+                    android:text=" Contenido "
+                    android:layout_margin="16dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvfecha"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:textColor="@color/textoclaro"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:id="@+id/numcomentspublicacion"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comentarios"
+            android:layout_marginTop="16dp"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/blanco"
+            android:layout_marginBottom="?attr/actionBarSize"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

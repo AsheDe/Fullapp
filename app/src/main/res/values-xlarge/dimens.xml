@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="portada_colapsing">560dp</dimen>
+    <dimen name="altocuba">120dp</dimen>
+    <dimen name="anchocuba">120dp</dimen>
+    <dimen name="portada_rel_val">48dp</dimen>
+    <dimen name="margenescard">96dp</dimen>
+    <dimen name="margentopcuba">64dp</dimen>
+    <dimen name="traslacioncuba">300dp</dimen>
+    <dimen name="portada_item_recyclers">128dp</dimen>
+    <dimen name="altocard">412dp</dimen>
+    <dimen name="progbarport">256dp</dimen>
+    <dimen name="imgavatar">200dp</dimen>
+    <dimen name="margencard">468dp</dimen>
+    <dimen name="portada_img_prov">204dp</dimen>
+    <dimen name="portad_progbar">160dp</dimen>
+    <dimen name="portada_img_categ">64dp</dimen>
+    <dimen name="portada_margenesinferiores">15dp</dimen>
+    <dimen name="valorport">64dp</dimen>
+    <dimen name="espaciado_card">16dp</dimen>
+    <dimen name="infotopmargin">116dp</dimen>
+    <dimen name="textorecycler">24sp</dimen>
+    <dimen name="textopresentacion">32sp</dimen>
+    <dimen name="movimientostar">16dp</dimen>
+    <dimen name="margeninferior">16dp</dimen>
+    <bool name="reallysmall">false</bool>
+    <dimen name="margensup">220dp</dimen>
+    <dimen name="margeninf">160dp</dimen>
+</resources>

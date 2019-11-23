@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.v7.widget.CardView android:layout_height="84dp"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="3dp"
+        android:id="@+id/card_pub"
+        app:cardBackgroundColor="@color/blanco"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/contedor_pub_list"
+            >
+
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/cuadro_subcategoria"
+        android:src="@drawable/img_laptop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"
+        android:scaleType="fitXY"
+       android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:transitionName="@string/transicionimg"
+
+        />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nuevapub"
+        android:src="@drawable/img_noleidos"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/cuadro_subcategoria"
+            />
+
+
+        <TextView
+            android:id="@+id/tvTituloPub"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textStyle="bold"
+
+            android:layout_marginTop="3dp"
+           android:layout_toRightOf="@+id/nuevapub"
+            android:lines="1"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            android:transitionName="@string/transiciontit"
+            />
+
+
+            <TextView
+                android:id="@+id/tvPrecioPub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/azul"
+                android:layout_toRightOf="@+id/nuevapub"
+                android:textSize="14sp"
+               android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:transitionName="@string/transicion_precio"
+                />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/ratingBar_item_pub"
+        style = "?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="5"
+       android:layout_toRightOf="@+id/tvPrecioPub"
+        android:layout_marginLeft="8dp"
+        android:isIndicator="true"
+        android:theme="@style/Rating"
+        android:layout_centerVertical="true"
+        android:transitionName="@string/transicion_ratings"
+
+         />
+
+
+
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_delete"
+            android:id="@+id/opciones_pub"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+           android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_buscar_publicacion"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/pubbusco"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/cuadro_subcategoria"
+                android:layout_marginLeft="32dp"
+                />
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img_comentario"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/pubbusco"
+    android:id="@+id/ghostcoment"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="16dp"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="15"
+    android:layout_alignParentBottom="true"
+    android:layout_toRightOf="@+id/ghostcoment"
+    android:layout_marginLeft="4dp"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/numcoments"
+
+    />
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+

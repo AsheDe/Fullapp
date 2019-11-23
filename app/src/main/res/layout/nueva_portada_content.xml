@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="cu.fullapp.Portada_Fragment">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/portada_colapsing"
+        android:background="@drawable/bacground_transp_portada"
+        android:transitionName="@string/transicion_portada_colaps"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true"
+
+        >
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:titleTextAppearance="@android:style/TextAppearance.Small"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_barlayout"
+        app:layout_anchorGravity="bottom|center_horizontal"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/blanco"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:id="@+id/card_perfil_portada"
+        android:layout_marginLeft="@dimen/margenescard"
+        android:layout_marginRight="@dimen/margenescard"
+        android:layout_marginTop="180dp"
+
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_presentacion"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/infotopmargin"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hola !"
+                android:id="@+id/portada_saludo"
+                android:textColor="@color/colorFont"
+                android:textStyle="bold"
+                android:textSize="@dimen/textopresentacion"
+
+                android:lines="1"
+                android:gravity="center"
+
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/espaciado_card"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actividad para la cual posee licencia"
+                android:id="@+id/actv_lic_portada"
+                android:textColor="@color/colorFont"
+
+                android:textSize="14sp"
+
+                android:lines="2"
+                android:layout_weight="1"
+
+
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/espaciado_card"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/img_backg_boton_azul"
+                android:layout_gravity="center"
+                android:text="Registrarse"
+                android:padding="4dp"
+                android:textColor="@color/blanco"
+                android:id="@+id/botonregistroportada"
+                android:layout_marginTop="@dimen/espaciado_card"
+
+                />
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/container_votos"
+                android:layout_marginTop="@dimen/espaciado_card"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorFont"
+                    android:textSize="20sp"
+                    android:id="@+id/uservotosport"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="24dp"
+                    android:translationY="-4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="votos"
+                    android:textColor="@color/colorSwipe"
+                    android:textSize="12sp"
+
+                    android:layout_below="@+id/uservotosport"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/wordvoto"
+
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_3_dots"
+                    android:layout_toRightOf="@+id/wordvoto"
+                    android:layout_toLeftOf="@+id/wordpub"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorFont"
+                    android:textSize="20sp"
+                    android:id="@+id/userpublicacionesport"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:translationY="-4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="publicaciones"
+                    android:textColor="@color/colorSwipe"
+                    android:textSize="12sp"
+                    android:translationX="-8dp"
+                    android:id="@+id/wordpub"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/userpublicacionesport"
+
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_3_dots"
+                    android:layout_toRightOf="@+id/wordpub"
+                    android:layout_toLeftOf="@+id/wordrank"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorFont"
+                    android:textSize="20sp"
+                    android:id="@+id/userrankingport"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="32dp"
+                    android:translationY="-4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ranking"
+                    android:textColor="@color/colorSwipe"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/wordrank"
+                    android:layout_below="@+id/userrankingport"
+
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:layout_anchor="@id/card_perfil_portada"
+        app:layout_anchorGravity="top|center_horizontal"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/portada_img_provincia"
+
+            android:layout_width="@dimen/portada_img_prov"
+            android:layout_height="@dimen/portada_img_prov"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="@dimen/progbarport"
+            android:layout_height="@dimen/progbarport"
+            android:background="@drawable/img_circle"
+            android:max="500"
+            android:progress="0"
+            android:progressDrawable="@drawable/img_circular_progress_bar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+        <ImageView
+            android:layout_width="@dimen/valorport"
+            android:layout_height="@dimen/valorport"
+            android:src="@drawable/circle"
+
+            android:id="@+id/port_backg_valoracion"
+
+            android:layout_alignTop="@+id/progressBar"
+            android:layout_alignLeft="@+id/progressBar"
+
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/valorport"
+            android:layout_height="@dimen/valorport"
+            android:id="@+id/rel_val"
+            android:layout_alignTop="@+id/progressBar"
+            android:layout_alignLeft="@+id/progressBar"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="4.4"
+                android:fontFamily="sans-serif|monospace|casual|serif"
+                android:textColor="@color/blanco"
+                android:id="@+id/portada_valtv"
+                android:maxLength="3"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:translationX="-4dp"
+
+                />
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/img_pub_por_destacadas"
+                android:id="@+id/star"
+                android:layout_toRightOf="@+id/portada_valtv"
+                android:translationX="-8dp"
+                android:translationY="@dimen/movimientostar"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/margeninferior"
+        android:elevation="6dp"
+
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/portada_img_categ"
+            android:layout_height="@dimen/portada_img_categ"
+            android:id="@+id/rounded_pc"
+            android:scaleType="fitXY"
+            android:layout_marginRight="16dp"
+            android:transitionName="@string/transicion_portada_pc"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/portada_img_categ"
+            android:layout_height="@dimen/portada_img_categ"
+            android:id="@+id/rounded_tel"
+            android:scaleType="fitXY"
+            android:layout_marginRight="16dp"
+            android:transitionName="@string/transicion_portada_cel"
+            />
+        <ImageView
+            android:layout_width="@dimen/portada_img_categ"
+            android:layout_height="@dimen/portada_img_categ"
+            android:id="@+id/rounded_transp"
+            android:scaleType="fitXY"
+
+            android:layout_marginRight="16dp"
+            android:transitionName="@string/transicion_portada_trans"
+            />
+        <ImageView
+            android:layout_width="@dimen/portada_img_categ"
+            android:layout_height="@dimen/portada_img_categ"
+            android:id="@+id/rounded_casa"
+            android:scaleType="fitXY"
+
+            android:layout_marginRight="16dp"
+            android:transitionName="@string/transicion_portada_home"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/portada_img_categ"
+            android:layout_height="@dimen/portada_img_categ"
+            android:id="@+id/rounded_misc"
+            android:scaleType="fitXY"
+            android:layout_marginRight="16dp"
+            android:transitionName="@string/transicion_portada_misc"
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

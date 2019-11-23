@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+
+        <item name="android:textColorSecondary">@color/blanco</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <item name="android:colorBackground">@color/blanco</item>
+        <item name="android:textColorPrimary">@color/colorFont</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorFont</item>
+        <item name="android:colorForeground">@color/blanco</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+        <style name="MyTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+        <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Actividades_statusbar" parent="MyTheme">
+        <item name="android:statusBarColor">@color/colapsUser</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <color name="colorPrimary">#484686</color>
+    <color name="colorPrimaryDark">#e2484686</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent1">#facadb</color>
+    <color name="colorAccent2">#ffc4d8</color>
+    <color name="colorFont">#001d34</color>
+
+    <color name="colorSwipe">#aba8a8</color>
+
+    <color name="colorT">#34464ac4</color>
+
+    <color name="colorForeground">#25b9a5</color>
+    <color name="backG">#1e030106</color>
+    <color name="colorIconos">#33B5E5</color>
+    <color name="blanco">#fdffff</color>
+    <color name="azul">#4486f5</color>
+    <color name="amarillo">#9a541f</color>
+
+    <color name="navstar">#5656b5</color>
+    <color name="navcenter">#47458e</color>
+    <color name="navend">#383862</color>
+
+    <color name="colorBackG">#bce2ff40</color>
+
+
+    <color name="colorOverCollaps">#ca1d1d2d</color>
+    <color name="colorOverPC">#02a3e3</color>
+    <color name="colorOverCel">#4caf50</color>
+    <color name="colorOverTrans">#f34336</color>
+    <color name="colorOverHogar">#617e8c</color>
+    <color name="colorOverMisc">#e81f63</color>
+
+    <color name="colorOverPCTpat">#9602a3e3</color>
+    <color name="colorOverCelTpat">#964caf50</color>
+    <color name="colorOverTransTpat">#96f34336</color>
+    <color name="colorOverHogarTpat">#96617e8c</color>
+    <color name="colorOverMiscTpat">#96e81f63</color>
+
+    <color name="colorFinal_progress">#03d1d5</color>
+    <color name="colorPrincipalApp">#6664a5</color>
+    <color name="colorPrincipalSwipe">#8f87eb</color>
+    <color name="colorPrincipalIconos">#c87a6ff8</color>
+    <color name="colorPrincipalBuscar">#4d9690d9</color>
+    <color name="colorRojo">#f73a3a</color>
+    <color name="colorMalva">#643aae</color>
+    <color name="colorFondoDrawer">#780a0118</color>
+    <color name="colorFondoDrawerButton">#2c030008</color>
+    <color name="lineaDiv">#1e030106</color>
+    <color name="colapsUser">#3a0270</color>
+    <color name="chatizq">#eafed7</color>
+    <color name="chatder">#d0e1fe</color>
+    <color name="fondosplash">#4d9690d9</color>
+    <color name="iconsettings">#627e8b</color>
+    <color name="modelo">#8f87eb</color>
+    <color name="modelo1">#dedbfb</color>
+    <color name="backgpubs">#f2f3f5</color>
+    <color name="textoclaro">#a6a7a9</color>
+</resources>
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <menu android:name="mufCatINMOB" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all" >
+        <item android:title="VENTA DE CASAS" android:icon="@drawable/img_vtacasas"/>
+        <item android:title="VENTA DE APARTAMENTOS" android:icon="@drawable/img_apartmentos"/>
+        <item android:title="HOSPEDAJE Y ALQUILER" android:icon="@drawable/img_alquiler"/>
+        <item android:title="PERMUTA" android:icon="@drawable/img_permuta"/>
+        <item android:title="AIRE ACONDICIONADO" android:icon="@drawable/img_aireacond"/>
+        <item android:title="ELECTRODOMÉSTICOS" android:icon="@drawable/img_electrodomesticos"/>
+        <item android:title="ARTÍCULOS DEL HOGAR" android:icon="@drawable/img_arthogar"/>
+        <item android:title="OTROS" android:icon="@drawable/img_otros"/>
+
+
+    </group>
+    </menu>
+

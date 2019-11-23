@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">2dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="imag_user_total">40dp</dimen>
+    <dimen name="default_stroke_width">7dp</dimen>
+    <dimen name="default_background_stroke_width">3dp</dimen>
+    <dimen name="app_bar_height_publicacion">260dp</dimen>
+    <dimen name="colapsin_publicacion">200dp</dimen>
+    <dimen name="reconocimiento">0dp</dimen>
+
+    <dimen name="portada_colapsing">300dp</dimen>
+    <dimen name="altocuba">30dp</dimen>
+    <dimen name="anchocuba">30dp</dimen>
+    <dimen name="portada_item_recyclers">88dp</dimen>
+    <dimen name="altocard">240dp</dimen>
+    <dimen name="progbarport">128dp</dimen>
+
+    <dimen name="margencard">232dp</dimen>
+    <dimen name="portada_img_prov">103dp</dimen>
+    <dimen name="portad_progbar">131dp</dimen>
+    <dimen name="portada_rel_val">48dp</dimen>
+    <dimen name="portada_img_categ">40dp</dimen>
+    <dimen name="valorport">36dp</dimen>
+    <dimen name="portada_margenesinferiores">5dp</dimen>
+    <dimen name="margenescard">16dp</dimen>
+    <dimen name="margentopcuba">12dp</dimen>
+    <dimen name="traslacioncuba">96dp</dimen>
+    <dimen name="infotopmargin">54dp</dimen>
+    <dimen name="espaciado_card">4dp</dimen>
+    <dimen name="textorecycler">15sp</dimen>
+    <dimen name="textopresentacion">20sp</dimen>
+    <dimen name="movimientostar">2dp</dimen>
+    <dimen name="margeninferior">3dp</dimen>
+    <!-- List Item -->
+    <dimen name="list_item_padding">5dp</dimen>
+    <dimen name="list_item_icon_width">40dp</dimen>
+    <dimen name="list_item_name_left_margin">5dp</dimen>
+
+    <!-- Chooser Fragment -->
+    <dimen name="prev_dir_width">30dp</dimen>
+    <dimen name="current_dir_left_margin">10dp</dimen>
+    <dimen name="items_list_top_margin">5dp</dimen>
+
+    <bool name="reallysmall">true</bool>
+    <dimen name="margensup">100dp</dimen>
+    <dimen name="margeninf">80dp</dimen>
+    <dimen name="appbaranuncios">144dp</dimen>
+    <dimen name="pageranunciostop">128dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu android:name="mufportada" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="all">
+        <item android:title="COMPUTADORA"></item>
+        <item android:title="CELULAR"></item>
+        <item android:title="DEL HOGAR"></item>
+        <item android:title="TRANSPORTE"></item>
+        <item android:title="MISCELANEAS"></item>
+
+    </group>
+    </menu>
+

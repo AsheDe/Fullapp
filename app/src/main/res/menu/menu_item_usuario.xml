@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ >
+    <group>
+    <item
+        android:id="@+id/muContactarEmail"
+        app:showAsAction="always"
+        android:title="ENVIAR CORREO"
+        android:icon="@drawable/img_correo"
+        > saludos1</item>
+
+    <item
+        android:id="@+id/muContactarCel"
+        app:showAsAction="always"
+        android:title="LLAMAR"
+        android:icon="@drawable/img_telefono"
+        />
+
+    <item
+        android:id="@+id/muContactarSMS"
+        android:title="ENVIAR SMS"
+        app:showAsAction="always"
+        android:icon="@drawable/img_sms"
+        />
+    </group>
+</menu>

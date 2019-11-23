@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.fullapp.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rangebar"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    custom:tickStart="5"
+    custom:tickInterval="1"
+    custom:tickEnd="10"
+    android:layout_marginLeft="48dp"
+    android:layout_marginRight="48dp"
+
+    />

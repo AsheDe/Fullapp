@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:colorBackground">@color/blanco</item>
+        <item name="android:textColorPrimary">@color/colorFont</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorFont</item>
+        <item name="android:colorForeground">@color/blanco</item>
+
+        <item name="android:textColorSecondary">@color/blanco</item>
+
+    </style>
+
+    <style name="FloatingButtons" parent="MyTheme">
+        <item name="colorAccent">@color/modelo </item>
+    </style>
+    <style name="Navigator" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+    </style>
+    <style name="Usuarios" parent="MyTheme">
+     <item name="windowActionBarOverlay">true</item>
+    </style>
+    <style name="SigAnt" parent="MyTheme">
+        <item name="colorAccent">@color/blanco</item>
+    </style>
+    <style name="EditText" parent="MyTheme">
+        <item name="android:textColorSecondary">@color/colorPrincipalSwipe</item>
+    </style>
+
+    <style name="Rating" parent="MyTheme">
+        <item name="android:textColorSecondary">@color/colorPrincipalSwipe</item>
+    </style>
+
+    <style name="Comentarios" parent="MyTheme">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="Registro" parent="Theme.AppCompat.Dialog">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+    <style name="Preferencias" parent="MyTheme">
+        <item name="android:colorForeground">@color/colorFont</item>
+        <item name="android:textColor">@color/colorFont</item>
+        <item name="android:textColorSecondary">@color/colorSwipe</item>
+        <item name="colorPrimaryDark">@color/colapsUser</item>
+
+    </style>
+
+
+    <style name="colapsed_publicacion" parent="MyTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="splash" parent="MyTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Actividades_statusbar" parent="MyTheme">
+        <item name="colorPrimaryDark">@color/colapsUser</item>
+    </style>
+
+
+</resources>
